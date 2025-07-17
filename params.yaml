@@ -1,0 +1,12 @@
+preprocess:
+  input: data/raw/data.csv
+  output: data/processed/data.csv
+
+train:
+  data: data/processed/data.csv
+  model: models/model.pkl
+  random_state: 42
+  max_iter: 100
+  penalty: l2
+  solver: liblinear
+  class_weight: balanced
